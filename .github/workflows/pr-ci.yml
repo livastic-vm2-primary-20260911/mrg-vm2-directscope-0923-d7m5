@@ -1,0 +1,11 @@
+name: VM2 Direct Merge PR CI
+on:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  pr-ci:
+    name: pr-ci
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo VM2_DIRECT_MERGE_PR_CI_OK
